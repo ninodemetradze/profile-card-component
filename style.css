@@ -1,0 +1,109 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+
+    background-image: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50em, 50em;
+    background-position: absolute;
+    background-position-y: -25em, 25em;
+    background-position-x: -8em, 50em;
+
+}
+
+
+.container {
+    width:350px;
+    height:374px;
+    background-color: #FFFFFF;
+    position: relative;
+    background-image: url(./bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 350px 140px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  
+    
+}
+
+.victor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+
+}
+
+.person-info {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 24px;
+}
+
+.person {
+    font-weight: 700;
+    color: #2E3349;
+}
+
+.age {
+    font-weight: 400;
+    color: #6B7082;
+
+}
+
+.place {
+    color: #6B7082;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 13px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #E8E9EC;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2E3349;
+}
+
+.text {
+    font-weight: 400;
+    color: #6B7082;
+    font-size: 10px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 24px;
+    margin-bottom: 27px;
+}
+
+@media  screen and (max-width:375px) {
+  .container{
+    width:326px;
+  }
+  body {
+    background-size: 40em, 40em;
+    background-position: absolute, absolute;
+    background-position-y: -22em, 22em;
+    background-position-x: -25em, 8em;
+  }
+}
